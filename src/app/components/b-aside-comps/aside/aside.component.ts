@@ -1,6 +1,7 @@
+import { ResourceLoader } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category.models';
-import { Image } from 'src/app/models/image.models';
+import { Product } from 'src/app/models/product.models';
 
 @Component({
   selector: 'app-aside',
@@ -10,17 +11,17 @@ import { Image } from 'src/app/models/image.models';
 export class AsideComponent implements OnInit {
 
   categoryList :  Category[];
-  imageList    :  Image[]=[];
-
+  productList    :  Product[]=[];
+  categoryId:number=0;
   constructor() {
     this.categoryList=[
-      new Category(1,'BAULES','cian-btn'),
-      new Category(2,'CAJAS','orange-btn'),
-      new Category(3,'CAMAS','green-btn'),
-      new Category(4,'ESCRITORIOS','cian-btn'),
-      new Category(5,'JUEGOS DIDACTICOS','pink-btn'),
-      new Category(6,'MESAS Y SILLAS','blue-btn'),
-      new Category(7,'ORGANIZADORES','cian-btn')
+      new Category(0,'BAULES','cian-btn'),
+      new Category(1,'CAJAS','orange-btn'),
+      new Category(2,'CAMAS','green-btn'),
+      new Category(3,'ESCRITORIOS','cian-btn'),
+      new Category(4,'JUEGOS DIDACTICOS','pink-btn'),
+      new Category(5,'MESAS Y SILLAS','blue-btn'),
+      new Category(6,'ORGANIZADORES','cian-btn')
   ];
    }
 
@@ -28,7 +29,10 @@ export class AsideComponent implements OnInit {
   }
 
   showImages(categoryId:number){
-    //this.imageList=
+    
+
+    this.categoryId=categoryId;
+   
   }
 
 }

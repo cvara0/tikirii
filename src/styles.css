@@ -14,10 +14,56 @@
 
  .text-title{
     text-align: center;
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Comic Neue', cursive;
     color: #00AEED;
  }
 
  .red-border{
     border: red solid 1px;
  }
+
+ /* transiciones al cargar la pag----------------------------------------------------*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+
+
+  /* transiciones fadeIn fadeOut*/
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fadeOut {
+    animation-name: fadeOut;
+  }
