@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+ /*margenes*/
+ .mt-xs { margin-top: .25em; }
+ .mt-sm { margin-top: .5em; }
+ .mt-md { margin-top: 1em; }
+ .mt-lg { margin-top: 2.5em; }
+ .mt-xl { margin-top: 6em; }
+ .mb-xl { margin-bottom: 6em; }
+ .mlr-auto{margin-left: auto; margin-right: auto;}
+
+ .center-all{
+    display: flex;
+    justify-content: center;
+ }
+
+ .text-title{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;;
+    color: #00AEED;
+ }
+
+ .red-border{
+    border: red solid 1px;
+ }
