@@ -2,6 +2,7 @@ import { ResourceLoader } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category.models';
 import { Product } from 'src/app/models/product.models';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-aside',
@@ -12,26 +13,19 @@ export class AsideComponent implements OnInit {
 
   categoryList :  Category[];
   productList    :  Product[]=[];
-  categoryId:number=0;
-  constructor() {
-    this.categoryList=[
-      new Category(0,'BAULES','cian-btn'),
-      new Category(1,'CAJAS','orange-btn'),
-      new Category(2,'CAMAS','green-btn'),
-      new Category(3,'ESCRITORIOS','cian-btn'),
-      new Category(4,'JUEGOS DIDACTICOS','pink-btn'),
-      new Category(5,'MESAS Y SILLAS','blue-btn'),
-      new Category(6,'ORGANIZADORES','cian-btn')
-  ];
+  category!:Category;
+
+  constructor(categoryService:CategoryService) {
+    this.categoryList=categoryService.getCategoryList();
    }
 
   ngOnInit(): void {
   }
 
-  showImages(categoryId:number){
+  showImages(category:Category){
     
 
-    this.categoryId=categoryId;
+    this.category=category;
    
   }
 

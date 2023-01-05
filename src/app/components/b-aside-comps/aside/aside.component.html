@@ -1,11 +1,11 @@
 
 <nav class="row justify-content-center">
     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12 center-all" *ngFor="let category of this.categoryList">    
-        <app-a-btn (click)="showImages(category.id)" tile="{{category.name}}" inputClass="{{category.color}}"></app-a-btn>
+        <app-a-btn (click)="showImages(category)" tile="{{category.name}}" inputClass="{{category.color}}"></app-a-btn>
     </div>
 </nav>
 
-<app-main [categoryId]="this.categoryId" class="center-all mt-lg" ></app-main>
+<app-main [category]="this.category" class="center-all mt-lg" ></app-main>
    
 
 

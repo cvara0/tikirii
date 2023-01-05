@@ -5,22 +5,27 @@
     color: white;
     width: 250px;
     height: 40px;
-    -webkit-transition: background-position .7s,box-shadow .4s;
-    transition: background-position .7s,box-shadow .4s;
     font-family: 'Comic Neue', cursive;
     font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
   }
   
   .pink-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #EE268C;
-    background-image: linear-gradient(to bottom, #EE268C, rgba(126, 94, 162, 0.51));
+    background-image: linear-gradient(to bottom, #EE268C, rgba(161, 175, 245, 0.24));
     filter: saturate(140%);
+    
   }
   .pink-btn:hover {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #782CDA;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #EE268C;
     filter: saturate(200%);
+    width: 265px;
+    height: 45px;
+    font-size: larger;
   }
-
+  
+  
   .orange-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #F7853C;
     background-image: linear-gradient(to bottom, #F7853C, rgba(222, 135, 61, 0.24));
@@ -30,7 +35,12 @@
   .orange-btn:hover {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #F7853C;
     filter: saturate(200%);
+    width: 265px;
+    height: 45px;
+    font-size: larger;
   }
+
+ 
 
   .green-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #00A85F;
@@ -40,8 +50,11 @@
   .green-btn:hover {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #00A85F;
     filter: saturate(200%);
+    width: 265px;
+    height: 45px;
+    font-size: larger;
   }
-  
+ 
   
   .cian-btn{
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #33E7EA;
@@ -49,10 +62,13 @@
     filter: saturate(140%);
   }
   .cian-btn:hover {
-    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #0099D8;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #33E7EA;
     filter: saturate(200%);
+    width: 265px;
+    height: 45px;
+    font-size: larger;
   }
-  
+
   
   .blue-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #0099D8;
@@ -62,6 +78,9 @@
   .blue-btn:hover {
     box-shadow: 0px 0px 0px 2px rgba(161, 175, 245, 0.24) inset, 0px 0px 30px 0px #0099D8;
     filter: saturate(200%);
+    width: 265px;
+    height: 45px;
+    font-size: larger;
   }
-  
+
   

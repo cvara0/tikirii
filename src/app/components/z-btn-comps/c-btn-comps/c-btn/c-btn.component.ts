@@ -8,7 +8,7 @@ import { Product } from 'src/app/models/product.models';
 })
 export class CBtnComponent implements OnInit {
 
-  @Input() productToShow  : Product | undefined;
+  @Input() productToShow!  : Product;
 
   constructor() { }
 

@@ -1,46 +1,46 @@
 
 
-    <ngb-carousel>
-                
-        <ng-template ngbSlide>
-                <img class="main-fig" src="{{this.productList[this.categoryId].imageUrl[0]}}">
-                <h3 class="carousel-caption">B-01</h3>
-         
-       </ng-template>
-   
-        <ng-template ngbSlide>
-                <img class="main-fig" src="{{this.productList[this.categoryId].imageUrl[1]}}">
-                <h3 class="carousel-caption">B-01</h3>
-        </ng-template>
-
-        <ng-template ngbSlide>
-                <img class="main-fig" src="{{this.productList[this.categoryId].imageUrl[2]}}">
-                <h3 class="carousel-caption">B-02</h3>
-        </ng-template>
-
-        <ng-template ngbSlide>
-                <img class="main-fig" src="{{this.productList[this.categoryId].imageUrl[3]}}">
-                <h3 class="carousel-caption">B-02</h3>
-        </ng-template>
-    </ngb-carousel>
     
-    <section class="mt-lg">
-        <article class="row justify-content-center"> 
-                <h1 (click)="show()" class="text-xxl neonBox neonText btn-42 rounded-box animate__animated animate__fadeInLeftBig">
+    <div class="container row justify-content-center">
+        <h1 class="col-12 text-title"> {{this.category.name}} </h1>
+    
+        <div class="col-12">
+            <ngb-carousel >
+              
+                    <ng-template *ngFor="let img of this.productList[0].imageUrl" ngbSlide>
+                        <img class="main-fig-1" src="{{img}}">
+                        <h3 class="carousel-caption">B-01</h3>
                  
-                    Camas </h1>
-           
-            <div *ngFor="let product of this.productList" class="{{this.listStyle}} dropContent col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-lg">
-                <app-c-btn [productToShow]=product class="animate__animated {{this.fadeStyle1}}"></app-c-btn>
-            </div>
-        </article>
-    </section>
-
-    <div class="row mb-xl mt-lg {{this.listStyle}}" >
-        <a (click)="hide()" class="btn-42 text-title center-all" >
-            cerrar
-        </a>
+               </ng-template>
+                  
+            </ngb-carousel>
+        </div>
+        <div>
+            <h1 style="cursor:pointer; color: #EE268C;" *ngIf="this.category.id!=0" (click)="show(this.category.id)" class="text-title">{{this.showMore}}</h1>
+        </div>
+       <div class="container row" >
+        <div *ngFor="let product of this.productListByCategory" class="{{this.listStyle}} col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 center-all">
+            <figure (click)="showDetail(product.id,this.category.id)" class="main-fig-2 animate__animated {{this.fadeStyle1}}" style="background-image: url('{{product.imageUrl[0]}}'); cursor: pointer;"></figure>
+           <!--<div class="row">
+                <div *ngFor="let img of product.imageUrl" class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 center-all">
+                    <figure class="main-fig-2 animate__animated {{this.fadeStyle1}}" style="background-image: url('{{img}}');"></figure>
+                </div>que me muestre una imagen de cada producto y cuando le doy clic me actualiza el carrusel de arriba con imagenes de ese producto
+            </div>--> 
+            
+        </div>
+       </div>
+        
+                
+    
     </div>
+    
+    
+
+
+    
+   
+
+    
    
 
 

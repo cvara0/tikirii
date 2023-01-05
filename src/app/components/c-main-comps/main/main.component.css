@@ -1,11 +1,33 @@
-.main-fig{
-    
+.main-fig-1{
+    width: inherit;
+    height: inherit;
     background-repeat: no-repeat; 
     background-size:cover;
-    background-position: 50% 50%;
-    border-radius: 30px;
+    border-radius: 50px;
+    border: 6px #33E7EA dashed;
+    /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
    
 }
+
+.main-fig-2{
+    width: 256px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px #33E7EA dashed;
+    border-radius: 10px;
+    transition: 0.8s;
+    
+    
+}
+
+.main-fig-2:hover{
+    filter: saturate(200%);
+    border: 4px #EE268C dashed;
+}
+
 
 
 
