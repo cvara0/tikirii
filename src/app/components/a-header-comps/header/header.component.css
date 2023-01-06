@@ -4,3 +4,16 @@
     width: 270px;
     height: 100px;
 }
+
+.header-fig-1{
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    border-radius: 10px;
+    border: 6px #33E7EA dashed;
+    /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+   
+}

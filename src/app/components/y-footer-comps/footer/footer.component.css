@@ -1,0 +1,10 @@
+.footer-style{
+    width: inherit;
+    height: inherit;
+  
+    border-radius: 10px;
+    border: 4px #33E7EA dashed;
+    /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+}

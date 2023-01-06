@@ -148,6 +148,26 @@ export class ProductService {
           'assets/img/mueble_organizador/organizador_3.png'
         ],
       []
+    ),
+    new Product(
+      4,
+      2,
+        [
+          'assets/img/mueble_organizador/organizador_1.png',
+          'assets/img/mueble_organizador/organizador_2.png',
+          'assets/img/mueble_organizador/organizador_3.png'
+        ],
+      []
+    ),
+    new Product(
+      5,
+      2,
+        [
+          'assets/img/mueble_organizador/organizador_1.png',
+          'assets/img/mueble_organizador/organizador_2.png',
+          'assets/img/mueble_organizador/organizador_3.png'
+        ],
+      []
     )
   ]
   ;

@@ -7,6 +7,21 @@
  .mb-xl { margin-bottom: 6em; }
  .mlr-auto{margin-left: auto; margin-right: auto;}
 
+.hr-blue{
+    border-top: 4px #0099D8 dashed;
+}
+.hr-pink{
+    border-top: 4px #EE268C dashed;
+
+}
+.hr-green{
+    border-top: 4px #00A85F dashed;
+}
+
+.hr-orange{
+    border-top: 4px #F7853C dashed;
+}
+
  .center-all{
     display: flex;
     justify-content: center;

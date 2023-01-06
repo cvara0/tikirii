@@ -1,7 +1,18 @@
 <header>
-    <figure class="header-fig mt-md mlr-auto">
-
+    <figure (click)='reload()' class="header-fig mt-lg mlr-auto" style="cursor: pointer;">
+        
     </figure>
     <h3 class="text-title" style="font-weight: bolder;">DISEÑO PARA NIÑOS</h3>
-    <hr>
+    <hr class="hr-blue mt-lg">
+    <h1 class="text-title mt-md" style="color: #EE268C;">¡ BIENVENID@S !</h1>
+    <h3 class="text-title mt-md">
+        alguna descripcion breve de la empresa o frase corta
+    </h3>
+    <ngb-carousel class="mt-md">
+        
+        <ng-template *ngFor="let img of this.randomProductImgList" ngbSlide >
+            <img class="header-fig-1" src="{{img}}">
+            <h1 class="carousel-caption"> </h1>
+       </ng-template> 
+    </ngb-carousel>
 </header>

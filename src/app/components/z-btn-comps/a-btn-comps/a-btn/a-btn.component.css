@@ -10,7 +10,7 @@
     font-size: large;
     transition: 0.5s;
   }
-  
+   
   .pink-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #EE268C;
     background-image: linear-gradient(to bottom, #EE268C, rgba(161, 175, 245, 0.24));
@@ -24,7 +24,7 @@
     height: 45px;
     font-size: larger;
   }
-  
+
   
   .orange-btn {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #F7853C;
