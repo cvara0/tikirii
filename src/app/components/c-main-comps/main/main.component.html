@@ -1,38 +1,25 @@
 
 
-    
-    <div class="container row justify-content-center">
-        <h1 class="col-12 text-title"> {{this.category.name}} </h1>
-    
-        <div class="col-12">
-            <ngb-carousel >
-              
-                    <ng-template *ngFor="let img of this.productList[0].imageUrl" ngbSlide>
+<main class="row justify-content-center mt-lg">
+
+        <h1 class="col-12 text-title animated fadeIn"> {{this.category.name}} </h1>
+        <div *ngFor="let product of this.productListByCategory" class="animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-lg">
+            
+            <figure (click)="open(infoModal)" class="main-fig-2 container" style="background-image: url('{{product.imageUrl[0]}}'); cursor: pointer;"></figure>
+           
+            <ng-template #infoModal let-modal>
+                <ngb-carousel>
+                    <ng-template *ngFor="let img of product.imageUrl" ngbSlide >
                         <img class="main-fig-1" src="{{img}}">
-                        <h3 class="carousel-caption">B-01</h3>
-                 
-               </ng-template>
+                        <h3 class="carousel-caption" [textContent]="product.id"></h3>
+                    </ng-template>
                   
             </ngb-carousel>
-        </div>
-        <div>
-            <h1 style="cursor:pointer; color: #EE268C;" *ngIf="this.category.id!=0" (click)="show(this.category.id)" class="text-title">{{this.showMore}}</h1>
-        </div>
-       <div class="container row" >
-        <div *ngFor="let product of this.productListByCategory" class="{{this.listStyle}} col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 center-all">
-            <figure (click)="showDetail(product.id,this.category.id)" class="main-fig-2 animate__animated {{this.fadeStyle1}}" style="background-image: url('{{product.imageUrl[0]}}'); cursor: pointer;"></figure>
-           <!--<div class="row">
-                <div *ngFor="let img of product.imageUrl" class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 center-all">
-                    <figure class="main-fig-2 animate__animated {{this.fadeStyle1}}" style="background-image: url('{{img}}');"></figure>
-                </div>que me muestre una imagen de cada producto y cuando le doy clic me actualiza el carrusel de arriba con imagenes de ese producto
-            </div>--> 
+            </ng-template>   
             
         </div>
-       </div>
         
-                
-    
-    </div>
+    </main>
     
     
 

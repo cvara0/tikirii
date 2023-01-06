@@ -110,7 +110,47 @@ export class ProductService {
           ],
         []
       )
-    ];
+    ,
+    new Product(
+      2,
+      2,
+        [
+          'assets/img/mueble_organizador/organizador_1.png',
+          'assets/img/mueble_organizador/organizador_2.png',
+          'assets/img/mueble_organizador/organizador_3.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png'
+        ],
+      []
+    ),
+    new Product(
+      2,
+      3,
+        [
+          'assets/img/mueble_organizador/organizador_1.png',
+          'assets/img/mueble_organizador/organizador_2.png',
+          'assets/img/mueble_organizador/organizador_3.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png',
+          'assets/img/mueble_organizador/organizador_4.png'
+        ],
+      []
+    ),
+    new Product(
+      3,
+      2,
+        [
+          'assets/img/mueble_organizador/organizador_1.png',
+          'assets/img/mueble_organizador/organizador_2.png',
+          'assets/img/mueble_organizador/organizador_3.png'
+        ],
+      []
+    )
+  ]
+  ;
 
   }
 
@@ -124,6 +164,10 @@ export class ProductService {
 
   getProductListByIdAndCategory(productId:number,categoryId:number){
     return this.productList.filter(product=>product.categoryId==categoryId && product.id==productId);
+  }
+
+  getFirstProduct(){
+    return this.productList[0];
   }
   
 }
