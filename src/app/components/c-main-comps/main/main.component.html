@@ -3,7 +3,7 @@
         
         <h1 class="col-12 text-title animated fadeIn"> {{this.category.name}} <hr class="hr-pink"></h1>
         
-        <div *ngFor="let product of this.productListByCategory" class="animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-lg">
+        <div *ngFor="let product of this.productListByCategory" class="container animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-lg">
             
             <figure (click)="open(infoModal)" class="main-fig-2 container" style="background-image: url('{{product.imageUrl[0]}}'); cursor: pointer;"></figure>
            
