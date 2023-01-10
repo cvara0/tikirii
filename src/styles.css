@@ -4,8 +4,11 @@
  .mt-md { margin-top: 1em; }
  .mt-lg { margin-top: 2.5em; }
  .mt-xl { margin-top: 6em; }
+ .mb-md { margin-bottom: 1em; }
  .mb-lg { margin-bottom: 2.5em; }
  .mb-xl { margin-bottom: 6em; }
+ .mb-sm { margin-bottom: .5em; }
+ .ml-md { margin-left: 1em; }
  .mlr-auto{margin-left: auto; margin-right: auto;}
 
 .hr-blue{

@@ -28,6 +28,24 @@
     border: 4px #EE268C dashed;
 }
 
+.anchor-main-style{
+    width: 120px;
+    height: 27px;
+  
+    border-radius: 10px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: 0.7s;
+    /* border: 4px #33E7EA dashed;cdisplay: block;
+  margin-left: auto;
+  margin-right: auto;*/
+}
 
+.anchor-main-style:hover{
+    filter: saturate(150%);
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+}
 
 

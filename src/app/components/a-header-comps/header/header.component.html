@@ -1,16 +1,19 @@
 <header>
-    <figure (click)='reload()' class="header-fig mt-lg mlr-auto" style="cursor: pointer;">
+    <figure (click)='reload()' class="header-fig mt-lg mlr-auto" style="background-image: url('assets/img/tikirii_icon.png');">
         
     </figure>
     <h3 class="text-title" style="font-weight: bolder;">DISEÑO PARA NIÑOS</h3>
     <hr class="hr-blue mt-lg">
-    <h1 class="text-title mt-md" style="color: #EE268C;">¡ BIENVENID@S !</h1>
+    <h1 class="text-title mt-md" style="color: #EE268C;">¡ BIENVENIDOS !</h1>
     <h3 class="text-title mt-md">
-        alguna descripcion breve de la empresa o frase corta
+        Apasionados por la calidad y los detalles, en tikirii cada diseño esta pensado en la seguridad, el disfrute y el bienestar de los mas chicos.
     </h3>
-    <ngb-carousel class="mt-md">
+
+    
+
+    <ngb-carousel class="mt-lg">
         
-        <ng-template *ngFor="let img of this.randomProductImgList" ngbSlide >
+        <ng-template *ngFor="let img of this.bannerImgList" ngbSlide >
             <img class="header-fig-1" src="{{img}}">
             <h1 class="carousel-caption"> </h1>
        </ng-template> 

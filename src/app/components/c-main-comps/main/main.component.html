@@ -3,15 +3,18 @@
         
         <h1 class="col-12 text-title animated fadeIn"> {{this.category.name}} <hr class="hr-pink"></h1>
         
-        <div *ngFor="let product of this.productListByCategory" class="container animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-lg">
+        <div *ngFor="let product of this.productListByCategory" class="container animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-md">
             
-            <figure (click)="open(infoModal)" class="main-fig-2 container" style="background-image: url('{{product.imageUrl[0]}}'); cursor: pointer;"></figure>
+            <figure (click)="open(infoModal)" class="main-fig-2 container" style="background-image: url('{{product.imgUrlList[0]}}'); cursor: pointer;"></figure>
            
             <ng-template #infoModal let-modal>
                 <ngb-carousel>
-                    <ng-template *ngFor="let img of product.imageUrl" ngbSlide >
+                    <ng-template *ngFor="let img of product.imgUrlList" ngbSlide >
+                                <a class="carousel-caption" target="_blank" href="https://wa.me/+5493751524207?text=hola%20gaby%20este%20msj%20de%20prueba%20soy%20maikel%20saludos%20desde%20prision">
+                                    <img src="assets/img/consultar_icon_60.png" style="box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #00A85F;" alt=""  class="anchor-main-style">    
+                                </a>    
                         <img class="main-fig-1" src="{{img}}">
-                        <h3 class="carousel-caption" [textContent]="product.id"></h3>
+               
                    </ng-template> 
                </ngb-carousel>
             </ng-template>    

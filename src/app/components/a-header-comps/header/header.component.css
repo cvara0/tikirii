@@ -1,8 +1,14 @@
 .header-fig{
-    background-image: url('../../../../assets/img/tikirii_icon.png');
+    cursor: pointer;
     background-size: cover;
     width: 270px;
     height: 100px;
+    transition: 0.6s;
+ 
+}
+.header-fig:hover{
+    filter: saturate(200%);
+
 }
 
 .header-fig-1{

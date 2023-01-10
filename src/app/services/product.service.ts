@@ -10,165 +10,171 @@ export class ProductService {
 
   constructor() { 
 
+    /*
+        public id           : number=0,
+        public categoryId   : number=0,
+        public name         : string='',
+        public imgListUrls  : string[]=[]
+    */
     this.productList=[
-      new Product(
-        0,
-        0,
-          [
-            'assets/img/baules/baul_1_img.png',
-            'assets/img/cajas/caja_1_img.png',
-            'assets/img/camas/cama_1_img.png',
-            'assets/img/escritorios/escritorio_1_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        1,
-          [
-            'assets/img/baules/baul_1_img.png',
-            'assets/img/baules/baul_2_img.png',
-            'assets/img/baules/baul_3_img.png',
-            'assets/img/baules/baul_4_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        2,
-          [
-            'assets/img/cajas/caja_11_img.png',
-            'assets/img/cajas/caja_2_img.png',
-            'assets/img/cajas/caja_3_img.png',
-            'assets/img/cajas/caja_4_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        3,
-          [
-            'assets/img/camas/cama_1_img.png',
-            'assets/img/camas/cama_2_img.png',
-            'assets/img/camas/cama_3_img.png',
-            'assets/img/camas/cama_4_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        4,
-          [
-            'assets/img/escritorios/escritorio_1_img.png',
-            'assets/img/escritorios/escritorio_2_img.png',
-            'assets/img/escritorios/escritorio_3_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        5,
-          [
-            'assets/img/juegos_didacticos/juego_1_img.png',
-            'assets/img/juegos_didacticos/juego_2_img.png',
-            'assets/img/juegos_didacticos/juego_3_img.png',
-            'assets/img/juegos_didacticos/juego_4_img.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        6,
-          [
-            'assets/img/mesas_sillas/mesa_silla_1.png',
-            'assets/img/mesas_sillas/mesa_silla_2.png',
-            'assets/img/mesas_sillas/mesa_silla_3.png',
-            'assets/img/mesas_sillas/mesa_silla_4.png'
-          ],
-        []
-      ),
-      new Product(
-        1,
-        7,
-          [
-            'assets/img/mueble_organizador/organizador_1.png',
-            'assets/img/mueble_organizador/organizador_2.png',
-            'assets/img/mueble_organizador/organizador_3.png',
-            'assets/img/mueble_organizador/organizador_4.png'
-          ],
-        []
-      ),
-      new Product(
-        2,
-        1,
-          [
-            'assets/img/mueble_organizador/organizador_1.png',
-            'assets/img/mueble_organizador/organizador_2.png',
-            'assets/img/mueble_organizador/organizador_3.png',
-            'assets/img/mueble_organizador/organizador_4.png',
-            'assets/img/mueble_organizador/organizador_4.png'
-          ],
-        []
-      )
-    ,
     new Product(
+      1,
+      1,
+      'baul_01',
+      [
+        'assets/img/baules_01/baul_01/baul_01_1.png',
+        'assets/img/baules_01/baul_01/baul_01_2.png',
+        'assets/img/baules_01/baul_01/baul_01_3.png',
+        'assets/img/baules_01/baul_01/baul_01_4.png',
+      ]
+
+    ),
+    new Product(
+      1,
       2,
-      2,
-        [
-          'assets/img/mueble_organizador/organizador_1.png',
-          'assets/img/mueble_organizador/organizador_2.png',
-          'assets/img/mueble_organizador/organizador_3.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png'
-        ],
-      []
+      'caja_01',
+      [
+        'assets/img/cajas_02/caja_01/caja_01_1.png',
+        'assets/img/cajas_02/caja_01/caja_01_2.png',
+        'assets/img/cajas_02/caja_01/caja_01_3.png',
+        'assets/img/cajas_02/caja_01/caja_01_4.png',
+      ]
+
     ),
     new Product(
       2,
+      2,
+      'caja_02',
+      [
+        'assets/img/cajas_02/caja_02/caja_02_1.png',
+        'assets/img/cajas_02/caja_02/caja_02_2.png'
+      ]
+    ),
+    new Product(
+      1,
       3,
-        [
-          'assets/img/mueble_organizador/organizador_1.png',
-          'assets/img/mueble_organizador/organizador_2.png',
-          'assets/img/mueble_organizador/organizador_3.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png',
-          'assets/img/mueble_organizador/organizador_4.png'
-        ],
-      []
+      'cama_01',
+      [
+        'assets/img/camas_03/cama_01/cama_01_1.png',
+        'assets/img/camas_03/cama_01/cama_01_2.png',
+        'assets/img/camas_03/cama_01/cama_01_3.png',
+        'assets/img/camas_03/cama_01/cama_01_4.png',
+        'assets/img/camas_03/cama_01/cama_01_5.png'
+      ]
+    ),
+    new Product(
+      1,
+      4,
+      'escritorio_01',
+      [
+        'assets/img/escritorios_04/escritorio_01/escritorio_01_1.png',
+        'assets/img/escritorios_04/escritorio_01/escritorio_01_2.png',
+        'assets/img/escritorios_04/escritorio_01/escritorio_01_3.png'
+      ]
+    ),
+    new Product(
+      1,
+      5,
+      'juego_didactico_01',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_01/juego_didactico_01_1.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_01/juego_didactico_01_2.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_01/juego_didactico_01_3.png'
+      ]
+    ),
+    new Product(
+      2,
+      5,
+      'juego_didactico_02',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_02/juego_didactico_02_1.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_02/juego_didactico_02_2.png'
+      ]
     ),
     new Product(
       3,
-      2,
-        [
-          'assets/img/mueble_organizador/organizador_1.png',
-          'assets/img/mueble_organizador/organizador_2.png',
-          'assets/img/mueble_organizador/organizador_3.png'
-        ],
-      []
+      5,
+      'juego_didactico_03',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_03/juego_didactico_03_1.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_03/juego_didactico_03_2.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_03/juego_didactico_03_3.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_03/juego_didactico_03_4.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_03/juego_didactico_03_5.png'
+      ]
     ),
     new Product(
       4,
-      2,
-        [
-          'assets/img/mueble_organizador/organizador_1.png',
-          'assets/img/mueble_organizador/organizador_2.png',
-          'assets/img/mueble_organizador/organizador_3.png'
-        ],
-      []
+      5,
+      'juego_didactico_04',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_04/juego_didactico_04_1.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_04/juego_didactico_04_2.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_04/juego_didactico_04_3.png'
+      ]
     ),
     new Product(
       5,
+      5,
+      'juego_didactico_05',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_05/juego_didactico_05_1.png',
+        'assets/img/juegos_didacticos_05/juego_didactico_05/juego_didactico_05_2.png'
+      ]
+    ),
+    new Product(
+      6,
+      5,
+      'juego_didactico_06',
+      [
+        'assets/img/juegos_didacticos_05/juego_didactico_06/juego_didactico_06_1.png'
+      ]
+    ),
+    new Product(
+      1,
+      6,
+      'mesa_silla_01',
+      [
+        'assets/img/mesas_sillas_06/mesa_silla_01/mesa_silla_01_1.png',
+        'assets/img/mesas_sillas_06/mesa_silla_01/mesa_silla_01_2.png',
+        'assets/img/mesas_sillas_06/mesa_silla_01/mesa_silla_01_3.png',
+        'assets/img/mesas_sillas_06/mesa_silla_01/mesa_silla_01_4.png',
+        'assets/img/mesas_sillas_06/mesa_silla_01/mesa_silla_01_5.png'
+      ]
+    ),
+    new Product(
       2,
-        [
-          'assets/img/mueble_organizador/organizador_1.png',
-          'assets/img/mueble_organizador/organizador_2.png',
-          'assets/img/mueble_organizador/organizador_3.png'
-        ],
-      []
+      6,
+      'mesa_silla_02',
+      [
+        'assets/img/mesas_sillas_06/mesa_silla_02/mesa_silla_02_1.png',
+        'assets/img/mesas_sillas_06/mesa_silla_02/mesa_silla_02_2.png',
+        'assets/img/mesas_sillas_06/mesa_silla_02/mesa_silla_02_3.png'
+      ]
+    ),
+    new Product(
+      1,
+      7,
+      'organizador_01',
+      [
+        'assets/img/organizadores_07/organizador_01/organizador_01_1.png',
+        'assets/img/organizadores_07/organizador_01/organizador_01_2.png',
+        'assets/img/organizadores_07/organizador_01/organizador_01_3.png',
+        'assets/img/organizadores_07/organizador_01/organizador_01_4.png',
+        'assets/img/organizadores_07/organizador_01/organizador_01_5.png',
+        'assets/img/organizadores_07/organizador_01/organizador_01_6.png'
+      ]
+    ),
+    new Product(
+      2,
+      7,
+      'organizador_02',
+      [
+        'assets/img/organizadores_07/organizador_02/organizador_02_1.png',
+        'assets/img/organizadores_07/organizador_02/organizador_02_2.png'
+      ]
     )
+
   ]
   ;
 
