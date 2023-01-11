@@ -15,6 +15,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    transition: 0.7s;
+
     /* border: 4px #33E7EA dashed;cdisplay: block;
   margin-left: auto;
   margin-right: auto;*/
@@ -25,4 +26,15 @@
     width: 200px;
     height: 45px;
     border-radius: 15px;
+}
+
+.modal-footer{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    border: 6px #00A85F dashed;
+    /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+   
 }

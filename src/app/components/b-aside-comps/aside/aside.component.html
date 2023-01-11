@@ -2,11 +2,14 @@
 
 <nav class="row justify-content-center mt-lg">
     <h1 class="text-title mt-md mb-md" style="color: #EE268C;">NUESTROS PRODUCTOS</h1>
+    
     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12 center-all" *ngFor="let category of this.categoryList">    
         
             <app-a-btn (click)="showImages(category)" tile="{{category.name}}" inputClass="{{category.btnColor}}"></app-a-btn>
    
     </div>
+    <h3 class="text-title mt-lg" style="color: #F7853C;">¡ CONSULTANOS Y ELEGÍ EL COLOR A TU GUSTO !</h3>
+    <h4 class="text-title mt-md" style="color: #F7853C;">🇦🇷 ENVIOS A TODO EL PAÍS 🇦🇷</h4>
     <app-main [category]="this.category" class="center-all" ></app-main>
 </nav>
 
