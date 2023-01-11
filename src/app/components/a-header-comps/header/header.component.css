@@ -1,10 +1,11 @@
 .header-fig{
     cursor: pointer;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 270px;
     height: 100px;
     filter: saturate(150%);
- 
+    /*filter: drop-shadow(10px 10px 10px #ffffff);*/
 }
 
 

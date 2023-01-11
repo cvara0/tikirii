@@ -4,10 +4,16 @@
         <h1 class="col-12 text-title animated fadeIn"> {{this.category.name}} <hr class="hr-pink"></h1>
        
         <div *ngFor="let product of this.productListByCategory" class="container animated fadeIn col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-md">
+                <div class="container">
+                    <figure class="main-fig-2 container" style="background-image: url('{{product.imgUrlList[0]}}');"></figure>
+                    <h4 (click)="open(infoModal)" class="text-title main-vermas container" >ver más...</h4>
+                </div>
+                
+         
             
-            <figure (click)="open(infoModal)" class="main-fig-2 container" style="background-image: url('{{product.imgUrlList[0]}}'); cursor: pointer;"></figure>
            
             <ng-template #infoModal let-modal>
+                <h3>modelo: {{product.name}}</h3>
                 <ngb-carousel>
                     <ng-template *ngFor="let img of product.imgUrlList" ngbSlide >
                                 <a class="carousel-caption" target="_blank" href="https://wa.me/+5493751524207?text=hola%20me%20interesa%20el%20modelo%20{{this.product.name}}%20">

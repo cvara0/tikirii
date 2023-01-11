@@ -23,9 +23,22 @@
     
 }
 
-.main-fig-2:hover{
+.main-vermas{
+    width: 256px;
+   /* height: fit-content;*/
+    color: #EE268C;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: #EE268C solid 2px;
+    position: relative;
+    top:-10px
+}
+
+.main-vermas:hover{
     filter: saturate(200%);
-    border: 4px #EE268C dashed;
+    color: #EE268C ;
+    border: #EE268C solid 2px;
 }
 
 .anchor-main-style{
